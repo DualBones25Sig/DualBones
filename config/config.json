@@ -1,0 +1,56 @@
+{
+    "device": "cuda:0",
+    "model_save_path" : "./result/models",
+    "predict_path":"./result/predict",
+
+    "model1": {
+        "batch_size": 8,
+        "epochs": 150,
+        "checkpoint": null,
+        "load_dict": -1,
+        "optimizer":{
+            "lr" : 1e-3,
+            "weight_decay" : 0
+        }
+    },
+    "lbs_model":{
+        "weights_optimizer":"mask_lsq"
+    },
+    "model2": {
+        "batch_size": 8,
+        "model1_epoch": 150,
+        "epochs": 150,
+        "checkpoint": null,
+        "load_dict": -1,
+        "optimizer":{
+            "lr" : 1e-3,
+            "weight_decay" : 0
+        }
+    },
+    "data":{
+        "tbqq_lenth" : 50,
+        "precompute_cache" : "./result/precomputed",
+        "fps": 30,
+        "up_axis": "y",
+        "relative_transforma": false,
+        "scale": 1.0,
+        "path":"./data/data/HANFU/",
+        "num_bones": 20,
+        "thertholde" : 0.025,
+        "bone_feather": 7,
+        "train_folders":["Motion0","Motion1","Motion2","Motion3","Motion4","Motion5","Motion6","Motion7","Motion8","Motion9","Motion10","Motion11","Motion12","Motion13","Motion14","Motion15","Motion16","Motion17","Motion18","Motion19","Motion20",
+        "Motion21","Motion22","Motion23","Motion24","Motion25","Motion27","Motion28","Motion29","Motion30","Motion31","Motion32","Motion33","Motion34","Motion35","Motion36","Motion37","Motion38","Motion39","Motion40",
+        "Motion41","Motion42","Motion43","Motion44","Motion45","Motion47","Motion48","Motion49","Motion50","Motion51","Motion52","Motion53","Motion54","Motion55","Motion56","Motion57","Motion59","Motion60",
+        "Motion61","Motion62","Motion63","Motion64","Motion65","Motion66","Motion67","Motion68","Motion69","Motion70","Motion71","Motion72","Motion73","Motion74","Motion75","Motion76","Motion77","Motion78","Motion79","Motion80",
+        "Motion82","Motion83","Motion84","Motion85","Motion87","Motion88"
+        ],
+        "test_folders":["Motion86","Motion46","Motion58","Motion81","Motion26"],
+        "cloth": {
+            "cloth": "HANFU",
+            "blend_weights_smoothing_iterations": 10
+        }
+    },
+    "lbs":{
+        "save_path" : "./result/cloth"
+    }
+}
