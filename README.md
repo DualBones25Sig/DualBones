@@ -1,4 +1,4 @@
-## DeePSD: Automatic deep skinning and pose space deformation for 3D garment animation
+## DBGarment: Predicting Garment Deformation with Dual Bones
 
 <img src="https://github.com/DualBones25Sig/DualBones/blob/main/fig/teaser.jpeg">
 
