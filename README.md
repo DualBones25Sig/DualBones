@@ -30,13 +30,13 @@ Just run 'predict.py' . You can specify the config file via "--config" and predi
 
 | ***motion_folder***   Describe one motion
 
-| |  **transform.npz**   *Describes the body information of this motion*
+| |  **transform.npz**   *Describes the body status of this motion*
 
 | |  ***garment_name*.npz**   *Describes the garment vertices of this motion*
 
 | **body_info.npz**    Describes the body information in bind pose
 
-| ***garment_name*_info.npz**    Describes the cloth information in bind pose
+| ***garment_name*_info.npz**    Describes the garment information in bind pose
 
 ## Citation
 ```
